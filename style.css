@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Playfair+Display:wght@700&display=swap");
+
+.navbar-line {
+  padding-left: 90px;
+}
+
+.btn-custom {
+  background-color: #f35a52;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #30363b;
+  }
+
+.navbar-nav .nav-item {
+  margin-right: 15px;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  color: #6c757d;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  content: "";
+  height: 3px;
+  background: linear-gradient(to right, #f8574f, #573e55);
+  transition: width 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.h1 {
+  padding-left: 130px;
+  padding-right: 90px;
+  margin-top: 90px;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.h5 {
+  padding-left: 130px;
+  padding-right: 90px;
+  margin-top: 40px;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.buttons {
+  padding-left: 130px;
+  padding-right: 90px;
+  margin-top: 50px;
+}
+
+.btn-custom1 {
+  background-color: white;
+  border-color: #dbdbdb;
+  border-radius: 5px;
+  padding: 13px 20px;
+}
+
+.btn-custom2 {
+  border: grey;
+  border-radius: 5px;
+  padding: 13px 20px;
+}
+
+.inner-heading {
+  padding-left: 130px;
+  padding-right: 90px;
+  font-family: "Lora", serif;
+  height: 50px;
+  line-height: 50px;
+  border: 0px solid;
+  overflow: hidden;
+}
+
+.inner-heading span {
+  position: relative;
+  animation: animation 10s step-end infinite;
+}
+
+@keyframes animation {
+  0%,
+  100% {
+    top: 0;
+  }
+
+  20% {
+    top: 0;
+  }
+
+  25% {
+    top: -50px;
+  }
+
+  40% {
+    top: -50px;
+  }
+
+  50% {
+    top: -90px;
+  }
+
+  70% {
+    top: -90px;
+  }
+
+  75% {
+    top: -150px;
+  }
+
+  95% {
+    top: -150px;
+  }
+}
+
+@keyframes underline {
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+.span {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+.span::after {
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  content: "";
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  animation: underline 0.5s forwards;
+}
+
+.animation {
+  animation-name: infiniteupdown;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  transition: all 0.5s;
+}
+
+@keyframes infiniteupdown {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.main-page {
+  position: relative;
+}
+
+.text-container {
+  position: relative;
+  z-index: 1;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.rexd-card {
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.left-card:hover,
+.right-card:hover,
+.left-card:active,
+.right-card:active {
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.18);
+}
+
+.rexd-card:hover {
+  transform: translateY(-10px);
+  background-color: white;
+}
+
+.rexd-card img {
+  height: 250px;
+  object-fit: contain;
+}
+
+.card-title {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
+.card-text {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+}
+
+.center-card {
+  background-color: white;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+}
+
+.counter {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+}
+
+.counter h1 {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  margin: 0;
+}
+
+.counter p {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.sales {
+  background-color: rgb(243, 243, 243);
+}
+
+.icons img {
+  width: 25px;
+  height: 25px;
+  margin: 0px 10px;
+}
+
+.btn-custom1,
+.btn-custom2 {
+  height: 60px;
+}
+
+.btn-custom3 {
+  background: linear-gradient(to right, #f55951, #543c52);
+  border: none;
+  border-radius: 5px;
+  padding: 13px 87px;
+  color: white;
+  font-weight: bolder;
+}
+
+.btn-custom4 {
+  background: linear-gradient(to right, #f55951, #543c52);
+  border: none;
+  border-radius: 5px;
+  padding: 15px 220px;
+  color: white;
+  font-weight: bolder;
+}
+
+.footer {
+  width: 100%;
+  background-color: #f9f9fa;
+}
+.footer-logo {
+  /* visibility: none; */
+  max-width: 100px;
+}
+
+.footer p {
+  color: #61696e;
+}
+
+.footer h5 {
+  font-weight: 700;
+}
+
+.footer .list-unstyled a {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.footer .list-unstyled a.text-danger {
+  color: #eb5140;
+}
+
+.footer.line-list a:hover {
+  text-decoration: underline;
+  /* font-size: 0%; */
+}
